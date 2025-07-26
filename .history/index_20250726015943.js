@@ -1,0 +1,91 @@
+
+// script.js
+
+// Récupération des éléments
+const toggleBtn = document.getElementById("menu-toggle");
+const navMenu = document.querySelector("nav ul");
+
+// Écoute du clic sur le bouton menu
+toggleBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
+
+const counters = document.querySelectorAll('.counter');
+
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const speed = 100; // Plus petit = plus rapide
+
+      const increment = Math.ceil(target / speed);
+
+      if (count < target) {
+        counter.innerText = count + increment;
+        setTimeout(updateCount, 30);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+
+
+  const openModalBtn = document.getElementById('openModalBtn');
+const modal = document.getElementById('contactModal');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+openModalBtn.addEventListener('click', () => {
+  modal.classList.add('show');
+});
+
+closeModalBtn.addEventListener('click', () => {
+  modal.classList.remove('show');
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.remove('show');
+  }
+});
+
+
+// // Affiche ou cache le bouton quand on scrolle
+// window.addEventListener('scroll', () => {
+//   const scrollBtn = document.querySelector('.scroll-to-top');
+//   if (window.scrollY > 300) {
+//     scrollBtn.classList.add('show');
+//   } else {
+//     scrollBtn.classList.remove('show');
+//   }
+// });
+
+// // Scroll vers le haut en douceur au clic
+// document.querySelector('.scroll-to-top').addEventListener('click', (e) => {
+//   e.preventDefault();
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'smooth'
+//   });
+// });
+
+
+ const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+    });
+
+    scrollToTopBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });

@@ -1,0 +1,192 @@
+
+/* 🌐 RESET DE BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* 🔝 HEADER */
+header {
+  background-color: #002855;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* 🖼️ SECTION HERO / ACCUEIL */
+.hero {
+  background: linear-gradient(to right, #002855, #004080);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+  background-color: #ff8000;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero .btn:hover {
+  background-color: #e67300;
+}
+
+/* 🧩 SECTIONS GÉNÉRALES */
+section {
+  padding: 2rem;
+  background-color: white;
+  margin: 1rem auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #002855;
+}
+
+/* 🛠️ SERVICES */
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #f0f8ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #004080;
+  margin-bottom: 0.5rem;
+}
+
+/* 🙋 À propos et projets */
+section#apropos p,
+section#projets ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section#projets ul {
+  list-style: square;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+/* 📩 CONTACT */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #002855;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #004080;
+}
+
+/* 🔚 FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #002855;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}

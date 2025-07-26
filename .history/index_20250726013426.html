@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>AFRITECH</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.jpg" alt="AfanouTech Logo">
+            <h1><span>AFRI</span>TECH</h1>
+        </div>
+
+         <!-- Bouton hamburger visible sur mobile -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+       
+
+       <nav>
+  <ul>
+    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+    <li><a href="#services"><i class="fas fa-tools"></i> Services</a></li>
+    <li><a href="#about"><i class="fas fa-info-circle"></i> À Propos</a></li>
+    <li><a href="#contacts" id="openModalLink"><i class="fas fa-envelope"></i> Contact</a></li>
+
+    <li><a href="#qualité"><i class="fas fa-project-diagram"></i> Nos Qualités</a></li>
+  </ul>
+</nav>
+
+    </header>
+
+<!-- hero -->
+ <section class="hero">
+    <div class="hero-content">
+        <h1>Solutions numériques innovantes pour l'Afrique</h1>
+
+        <p>Nous créons des expériences web exceptionnelles et des stratégies marketing digitales qui propulsent votre entreprise vers le succès.</p>
+        <a href="#contacts" class="btn">Contactez-nous</a>
+        <a href="#services" class="btn">Nos Services</a>
+
+    </div>
+    <div class="hero-image">
+        <img src="image/emile.jpg" alt="Image d'accueil">
+    </div>
+
+    <div class="couleurpassante en design">
+         
+    </div>
+
+ </section>
+
+
+ <!-- SECTION SERVICES -->
+  <section id="services" class="services-section">
+            <h2>Nos Services</h2>
+    <div class="services">
+    
+        <div class="service-item">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Développement Web</h3>
+            <p>Sites vitrines, e-commerce, applications web sur mesure adaptés à vos besoins spécifiques et optimisés pour tous les appareils.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Applications Mobiles</h3>
+            <p>Développement d'applications mobiles natives et hybrides pour iOS et Android, offrant une expérience utilisateur exceptionnelle.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-chart-line"></i>
+            <h3>Marketing Digital</h3>
+            <p>Stratégies de marketing digital personnalisées, SEO, publicité en ligne et gestion des réseaux sociaux pour augmenter votre visibilité.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Cybersécurité</h3>
+            <p>Solutions de sécurité avancées pour protéger vos données et votre infrastructure contre les menaces numériques.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-palette"></i>
+            <h3>Design UX/UI</h3>
+            <p>Création d'interfaces utilisateur intuitives et esthétiques pour améliorer l'expérience de vos utilisateurs.</p>
+        </div>
+
+        <div class="service-item">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h3>Formation en Développement Informatique</h3>
+            <p>Formations sur les technologies web, le développement d'applications et les meilleures pratiques en informatique.</p>
+            </div>
+    </div>
+
+
+     
+
+
+  </section>
+<!-- SECTION apropos -->
+<section id="about" class="about-section">
+  <h2>À propos de nous</h2>
+  <p>
+    AFRITECH Solutions est une agence numérique fondée par Emile Afanou, passionné de technologie et de développement digital.<br><br>
+    Spécialisée dans le développement web, le marketing digital et la cybersécurité, elle aide les entreprises africaines à réussir leur transformation numérique grâce à des solutions innovantes et accessibles.<br><br>
+    AfriTech incarne une vision moderne de l’Afrique : connectée, compétente et ambitieuse.
+  </p>
+
+  <!-- COMPTEURS -->
+  <div class="counters" id="qualité">
+    <div class="counter-box">
+      <span class="counter" data-target="30">0</span>
+      <p>Projets réalisés</p>
+    </div>
+    <div class="counter-box">
+      <span class="counter" data-target="15">0</span>
+      <p>Clients satisfaits</p>
+    </div>
+    <div class="counter-box">
+      <span class="counter" data-target="5">0</span>
+      <p>Formations données</p>
+    </div>
+    <div class="counter-box">
+      <span class="counter" data-target="2">0</span>
+      <p>Années d'expérience</p>
+    </div>
+  </div>
+
+  <!-- NOS QUALITÉS -->
+  <div class="nos-qualites">
+    <h3>Nos qualités</h3>
+    <ul>
+      <li><i class="fas fa-lightbulb"></i> Innovation</li>
+      <li><i class="fas fa-universal-access"></i> Accessibilité</li>
+      <li><i class="fas fa-user-cog"></i> Expertise</li>
+      <li><i class="fas fa-handshake"></i> Engagement</li>
+      <li><i class="fas fa-users"></i> Collaboration</li>
+    </ul>
+  </div>
+
+
+  <!-- Bouton pour ouvrir la modale -->
+<!-- <button id="openModalBtn" class="open-modal-btn">Contactez-nous</button> -->
+
+<!-- Modale -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModalBtn" class="close-btn">&times;</span>
+    <h2>Contactez-nous</h2>
+    <form action="https://formspree.io/f/mabcxyz" method="POST">
+      <input type="text" name="name" placeholder="Votre nom" required autocomplete="off" />
+      <input type="email" name="email" placeholder="Votre email" required autocomplete="off" />
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </div>
+</div>
+</section>
+
+
+<section id="temoignages" class="temoignages-section">
+  <h2>Ce que disent nos clients</h2>
+  <div class="temoignages-container">
+    
+    <div class="temoignage">
+      <p class="message">"AFRITECH a transformé notre présence en ligne. Service rapide et professionnel !"</p>
+      <div class="auteur">
+        <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="Avatar femme">
+        <div>
+          <h4>Fatou Koné</h4>
+          <span>Gérante, Boutique Élégance</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="temoignage">
+      <p class="message">"Une équipe à l’écoute, disponible, et des résultats au-delà de mes attentes."</p>
+      <div class="auteur">
+        <img src="https://cdn-icons-png.flaticon.com/512/147/147142.png" alt="Avatar homme">
+        <div>
+          <h4>Yao Michel</h4>
+          <span>Directeur, École La Réussite</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="temoignage">
+      <p class="message">"Professionnalisme, créativité et efficacité. Merci AFRITECH !"</p>
+      <div class="auteur">
+        <img src="https://cdn-icons-png.flaticon.com/512/147/147140.png" alt="Avatar femme">
+        <div>
+          <h4>Aïcha Diabaté</h4>
+          <span>Entrepreneure</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>AFRITECH</h2>
+      <p>Transformons l’Afrique grâce au digital.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Liens rapides</h4>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4 id="contacts">Contacts</h4>
+      <p><i class="fas fa-envelope"></i> afritech@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +225 05 85 31 13 29</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/2250585311329" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 AFRITECH. Tous droits réservés.</p>
+  </div>
+</footer>
+<!-- Flèche retour en haut -->
+
+
+    <script src="index.js"></script>
+
+    <!-- Bouton flèche vers le haut -->
+
+
+   <!-- Flèche retour en haut -->
+<a href="#" class="scroll-to-top" aria-label="Retour en haut">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+
+</body>
+
+
+
+</html>
